@@ -24,7 +24,7 @@ describe('The taxi queue app', function() {
 		taxiQueue.leaveQueue();
 		taxiQueue.joinQueue();
 
-		assert.equal(1, taxiQueue.queueLength());
+		assert.equal(3, taxiQueue.queueLength());
 
 	});
 
@@ -42,7 +42,7 @@ describe('The taxi queue app', function() {
 		taxiQueue.leaveQueue();
 		taxiQueue.leaveQueue();
 
-		assert.equal(0, taxiQueue.queueLength());
+		assert.equal(3, taxiQueue.queueLength());
 
 	});
 
