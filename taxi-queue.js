@@ -1,7 +1,7 @@
 function TaxiQueue() {
 
-	let peopleCounter=0;
-	let taxiCounter=0
+	let peopleCounter = 0;
+	let taxiCounter = 0
 
 	function joinQueue() {
 		peopleCounter++;
@@ -10,7 +10,7 @@ function TaxiQueue() {
 	}
 
 	function leaveQueue() {
-if(peopleCounter>0){peopleCounter;}
+		if (peopleCounter > 0) { return peopleCounter--; }
 	}
 
 	function joinTaxiQueue() {
@@ -23,15 +23,20 @@ if(peopleCounter>0){peopleCounter;}
 	}
 
 	function taxiQueueLength() {
-return taxiCounter
+		return taxiCounter
 
 	}
 
-	function taxiDepart(){
-		if(taxiCounter>0 &&counter1>12){
+	function taxiDepart() {
+		if (taxiCounter > 1 && peopleCounter >= 12) {
 			taxiCounter--;
-			peopleCounter-=12;
+			peopleCounter -= 12;
 		}
+
+		// if (taxiCounter > 0 && peopleCounter > 12) {
+		// 	taxiCounter--;
+		// 	peopleCounter -= 12;
+		// }
 
 	}
 
