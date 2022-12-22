@@ -13,7 +13,7 @@ A local taxi association needs some help to manage queues at some of their taxi 
 
 They need a web widget which rank managers can use to keep track of how many people are joining and leaving taxi queues. They also want to keep track of how many taxis are queueing.
 
-## Instructions
+## How It works
 
 The widget should keep track off:
 
@@ -27,32 +27,3 @@ The widget should keep track off:
 	- remove 1 from the taxi queue
 	- remove 12 people from the people queue
 * A taxi can only leave if there are enough people (12 people) in the queue to fill the taxi.
-
-
-## Instructions
-
-* Make all the unit tests pass in `taxi-queue.test.js`. Run the tests from `test/index.html`.
-* HTML & CSS for this widget in `index.html`
-* Some failing unit tests that you need to stop failing by implementing the TaxiQueue Factory Function in `taxi-queue.js`. Don't change the test file `test/taxi-queue.test.js`
-* A Factory function skeleton is in the `taxi-queue.js` file.
-* Implement the DOM functionality in the `taxi-queue.dom.js` file.
-
-## Add localStorage
-
-Once your widget is done store all the queue counters in localStorage be sure that the data is shown correctly after a refresh.
-### Add a unit test for localStorage
-Add a unit test/s to show that your Factory Function's constructor can initialize the people and taxi queue count.
-
-## For & clone
-
-Fork and clone this repo.
-
-## Send links for review
-
-* Planning: Send your Problem Solving Template and Kanban Board by 10:30 (they should be mostly complete; and you can still update them after this) 
-	* Problem Solving Template: https://docs.google.com/document/d/1LwuNMhYG88aA5OsvNQRccxpmLz7JmfUOPUTEa1PNLX8/copy
-	* Complete this form to send your PLANNING links: https://docs.google.com/forms/d/e/1FAIpQLScvytVS_p_Y7ZZ3gXwo9JAhwGlS_X95oMlZu13o9FQdATZLpA/viewform
-* Github Repo & Deployed Apps: 
-	* Complete this form to send your GITHUB links: https://docs.google.com/forms/d/e/1FAIpQLScf6UGysuph5wz_ZAtJXcqlQoQfuOdOpH_vdsbZmyMKQF5aPg/viewform
-	
-And make sure you submit your final links by latest **16h00** on **30 May 2022**.
